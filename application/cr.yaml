@@ -1,0 +1,13 @@
+apiVersion: database.example.com/v1
+kind: Postgres
+metadata:
+  name: my-db
+spec:
+  image: postgres:16
+  replicas: 1
+  storage: 5Gi
+  username: admin
+  password: secret
+  database: app
+
+  
